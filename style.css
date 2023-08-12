@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 20px;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+    /* layering ke lis use hota hai z index like default zidex=0 hota hai toh agr hm kisko zind=-1 krte hai toh wo 0 wale kie neeche chala jata hai */
+}
+.fairy{
+    transform: translateZ(-30px) scale(2.6);
+}
+.goblin{
+
+    transform: translateZ(-10px) translateY(120px) scale(1);
+}
+.fairy, .goblin{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+h1{
+    position: absolute;
+    top: 19%;
+    right: 10%;
+    font-size: 8rem;
+    color: black;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+section{
+    background-color: rgb(45, 45, 45);
+    color: white;
+    padding: 5rem 0;
+}
+
+.dramas{
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+}
+
+.desc{
+    position: absolute;
+    background-color: white;
+    padding: 0.5rem 2.5rem;
+    top: 50%;
+    left: 50%;
+    color: black;
+    font-size: 3.5rem;
+    transform: translateX(-50%) translateY(-50%);
+    font-weight: 600;
+}
+
+.gether{
+    background-image: url(2gether\(thai\).jpg);
+}
+.daydreamer{
+    background-image: url(daydeeamer.jpg);
+}
+.gogosquid{
+    background-image: url(gogosquid.jpg);
+}
+
+.text{
+    font-size: 1.5rem;
+    padding: 1 10rem;
+    margin: 5rem 0;
+}
